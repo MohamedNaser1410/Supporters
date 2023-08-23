@@ -31,6 +31,9 @@ nav a {
     font-size: 1.9vw;
     font-weight: bold;
 }
+nav #footer_section:hover{
+    color: #fc653b;
+}
 
 nav .linkedbutton {
     background-color: #E08E78;
