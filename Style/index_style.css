@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+
+}
+
+body {
+    background-color: #3770a5;
+    font-size: 0.8vw;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1vw;
+    background-color: #008684;
+    height: 7vh;
+    padding: 1vh;
+
+
+}
+
+
+
+nav a {
+    text-decoration: none;
+    font-size: 1.9vw;
+    font-weight: bold;
+}
+
+nav .linkedbutton {
+    background-color: #E08E78;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+    padding: 9px;
+    margin: 0 2vw;
+}
+
+nav .linkedbutton:hover {
+    background-color: #fc653b;
+}
+
+
+
+
+.front_text_page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5vh 15vw 5vw;
+}
+
+.front_text_page .image_to_managers {
+    border-radius: 1vw;
+    margin: 5vw;
+}
+
+.front_text_page .image_to_managers img {
+    border-radius: inherit;
+    border-left: 1vw solid #008684;
+    width: 18vw;
+
+}
+
+.front_text_page .text_description span {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.front_text_page .text_description p {
+    padding: 0.5vw 2vw;
+    width: 40vw;
+}
+
+.front_text_page .text_description p span {
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+
+.content_sections .page_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #008684;
+    border-radius: 1vw;
+    margin: 2vh 15vw;
+}
+
+.content_sections .page_content .section_img {
+    width: 15vw;
+    margin: 0 1vw;
+
+}
+
+.content_sections .page_content .apply_info {
+    display: flex;
+    align-items: center;
+    margin: 0 1vw;
+    font-weight: bold;
+    width: 49vw;
+}
+
+.content_sections .page_content .apply_info a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #E08E78;
+    text-align: center;
+    border-radius: 0.8rem;
+    font-size: 1vw;
+    padding: 0.5vw;
+    width: 7vw;
+}
+
+.content_sections .page_content .apply_info a:hover {
+    background-color: #fc653b;
+
+}
+
+.content_sections .page_content .apply_info .content_description {
+    width: 40vw;
+    margin: 4vw;
+}
+
+
+
+
+
+.page_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh 0 0;
+    padding: 15vw;
+    height: 20vw;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+
+.page_footer li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1vw;
+    margin: 1vw 10vw;
+}
+
+.page_footer li a {
+    text-decoration: none;
+    margin: 0.3vw;
+}
+
+.page_footer li a:hover {
+    color: #fc653b;
+}
+
+
+
+
+
+@media (max-width:720px) {
+    body {
+        font-size: 1.2vw;
+    }
+
+    nav a {
+        font-size: 2.5vw;
+    }
+
+    nav .linkedbutton {
+        font-size: 2vw;
+        padding: 12px;
+
+    }
+
+
+
+    .front_text_page {
+        margin: 3.5vh 10vw 5vw;
+    }
+
+    .front_text_page .image_to_managers img {
+        width: 40vw;
+    }
+
+    .front_text_page .text_description {
+        width: 60vw;
+        text-align: center;
+    }
+
+    .front_text_page .text_description span {
+        font-size: 5vw;
+    }
+
+    .front_text_page .text_description p {
+        width: inherit;
+    }
+
+    .front_text_page .text_description p span {
+        font-size: 1.4vw;
+    }
+
+    .content_sections .page_content {
+        flex-direction: column;
+        background-color: transparent;
+        margin: 5vh 15vw;
+    }
+
+    .content_sections .page_content .section_img {
+        margin: 3vw auto;
+        width: 35vw;
+    }
+
+    .content_sections .page_content .apply_info {
+        flex-direction: column;
+        width: 49vw;
+    }
+
+    .content_sections .page_content .apply_info a {
+        font-size: 2vw;
+        padding: 10px;
+        width: 15vw;
+    }
+
+    .content_sections .page_content .apply_info .content_description {
+        text-align: center;
+        width: 40vw;
+        margin: 2vw 19vw;
+    }
+
+    .page_footer {
+        margin: 10vh 0 0;
+        padding: 10vw 2vw;
+        height: 40vw;
+        background-color: rgba(0, 0, 0, 0.781);
+    }
+
+    .page_footer li {
+        font-size: 1.8vw;
+        margin: 1vw 20vw auto auto;
+    }
+
+    .page_footer .contact_supporter {
+        margin: 2vw auto auto 20vw;
+    }
+
+}

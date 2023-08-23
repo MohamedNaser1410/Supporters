@@ -1,0 +1,117 @@
+body{
+    background-color: #0c4a91    ;
+    display: flex;
+    color: white;
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../fonts/Awkward.ttf);
+}
+
+/* Video icon */
+.v_icon{
+    /* Video icon */
+    position: absolute;
+    left: 5%;
+    border-radius: 50%;
+    --main_color:#0c4a91;
+    --arrow_color: #c46bff;
+    border: 30px solid var(--main_color);
+}
+.v_icon_arrow{
+    /* Video icon */
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -28px;
+    z-index: 10;
+    height: 0;
+    width: 0;
+    border-top:12px solid var(--main_color);  
+    border-right: 25px solid var(--arrow_color);  
+    border-bottom:12px solid var(--main_color);  
+    border-left:12px solid var(--main_color) ; 
+}
+.v_icon:hover{
+    --main_color:  #c46bff;
+    --arrow_color:#0c4a91;
+}
+
+.titleSupporters{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    font-size: 150px;
+    font-family:'my_font' ;
+    font-size: 180px;
+}
+
+/* style form section */
+.form_cont{
+    display: flex;
+    position:absolute;
+    padding: 15px;
+    top: 20%;
+    right: 2%;
+    height: 700px;
+    font-size: 20px;
+}
+.form_cont label{
+    display: inline-block;
+    font-weight: bold;
+    width: 125px;
+    margin: 6px;
+}
+form #log{
+    margin: 10px auto auto 130px;
+    width: 100px;
+    height: 28px;
+    color: black;
+    background-color: rgb(30, 248, 255);
+    margin: 30px 200px ;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+form #log:hover{
+    background-color:rgba(0, 0, 0, 0.705); 
+    color: white;
+}
+input{
+    height: 25px;
+    width: 200px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+
+}
+    /* page design */
+
+    .form_cont::after{
+        content: "";
+        position: absolute;
+        padding: 220px;
+        z-index: -1;
+        left: 16%;
+        top: -60%;
+        border-radius: 50%;
+        background-color: #c46bff;
+    }
+    header:before{
+        content: "";
+        position: absolute;
+        padding: 180px;
+        z-index: -1;
+        left: 16%;
+        top: 50%;
+        border-radius: 50%;
+        background-color: #c46bff;
+    }
+    header::after{
+        content: "";
+        position: absolute;
+        padding: 120px;
+        z-index: -1;
+        left: -5%;
+        top: 10%;
+        border-radius: 50%;
+        background-color: #c46bff;
+    }
